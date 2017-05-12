@@ -1,15 +1,9 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'org.akhikhl.gretty:gretty:1.4.2'
-    }
+plugins {
+    id 'com.github.ben-manes.versions' version '0.14.0'
+    id 'java'
+    id 'war'
+    id 'org.akhikhl.gretty' version '1.4.2'
 }
-
-apply plugin: 'java'
-apply plugin: 'war'
-apply plugin: 'org.akhikhl.gretty'
 
 gretty {
     contextPath = '/'
